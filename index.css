@@ -1,0 +1,132 @@
+/* <div className='parent'>
+  <div className= 'child'>
+    <a className='link'></a>
+  </div>
+</div>
+
+.parent child link {
+
+} */
+
+/* CSS Reset */
+
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* padding on all sides  */
+/* padding inside */
+.padding {
+  padding: 20px
+}
+
+/* margin on all sides  */
+/* margin outside  */
+.margin {
+  margin: 20px 
+}
+
+/* move content to the middle  */
+/* use max-width for responsive design */
+.container {
+  max-width: 960px;
+  margin: auto; 
+}
+
+/* text even on the edges */
+.container {
+  text-align: justify;
+}
+
+/* link styling */
+
+.a {
+  text-decoration: none;
+}
+a:hover {
+  color: coral;
+  font-size: 5em
+}
+/* after the link is visited */
+a:visited {
+  color: red
+}
+a:active {
+  color: red
+}
+/* pointer on button */
+.btn {
+  cursor: pointer;
+}
+
+/* display property */
+
+/* change block level to inline */
+.li {
+  display: inline;
+}
+
+/* change inline to block */
+.img {
+  /* puts image in the middle  */
+  display: block;
+  margin: auto 
+}
+
+/* displays horizontal but also allows us to add width and height  */
+.div {
+  box-sizing: border-box;
+  display: inline-block
+}
+
+/* position is based on scroll position  */
+.div {
+  position: sticky;
+  top: 0;
+  z-index: -1;
+}
+
+/* MEDIA QUERIES  */
+h1{
+  display: none;
+}
+/* smartphones */
+@media(max-width: 500px) {
+  body{
+    background-color: red;
+  }
+}
+/* will display only on a smartphone */
+.smartphone h1 {
+  display: block
+}
+
+/* tablet */
+@media(min-width: 501px) and (max-width: 768px) {
+  body {
+    background: blue;
+  } 
+}
+
+/* normal */
+@media(min-width: 769px) and (max-width: 1200px) {
+  body {
+    background: green
+  }
+}
+
+/* widescreen */
+@media(min-width: 1201px){
+  body {
+    background: black
+  }
+}
+
+/* landscape */
+@media(max-height: 500px){
+  body {
+    background: orange
+  }
+}

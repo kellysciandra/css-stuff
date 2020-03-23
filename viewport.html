@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vh and v2 units</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      
+    }
+
+    header {
+      background: aqua url('https://source.unsplash.com/daily') no-repeat center center/cover;
+      color: white;
+      /* covers everything */
+      height: 100vh;
+      text-align: center;
+      padding: 2rem;
+      padding-top: 15rem;
+    }
+
+    header h1 {
+      font-size: 3rem
+    }
+
+    header p {
+      margin: 1rem 0;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      background: yellow;
+      color: wheat;
+      padding: .75rem 2rem;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    @media(max-height: 450px) {
+      header {
+        padding-top: 5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+    <header>
+      <h1>welcome to our website</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui commodi nesciunt pariatur, eum quod laborum?</p>
+      <a href="#" class='btn'></a>
+    </header>
+
+    <section>
+      <h3>about the company</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo rem totam laboriosam optio ut odio nemo quod praesentium unde dolore, nesciunt natus tempore corrupti accusamus eius ea, enim consectetur nam quos eaque. Vitae esse maxime iste sequi suscipit autem vero atque, dignissimos aut facilis impedit laborum doloremque tenetur aliquid eum?</p>
+    </section>
+</body>
+</html>
